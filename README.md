@@ -94,6 +94,7 @@ a2enmod lbmethod_byrequests deflate
 </VirtualHost>
 ```
 - Borramos el default.conf y copiamos el nuestro con los parametros deseados
+```bash
 
 rm -f /etc/apache2/sites-enabled/000-default.conf
 
