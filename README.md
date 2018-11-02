@@ -174,7 +174,7 @@ apt-get install -y mysql-server
  - Entra en el archivo de configuracion de MYSQL y reemplaza 127.0.0.1 por 0.0.0.0 para que todos se puedan conectar a esta base de datos
 
 ```bash
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
+sed -i 's/127.0.0.1/0.0.0.0/' /etc/mysql/mysql.conf.d/mysqld.cnf
 /etc/init.d/mysql restart
 ```
 
