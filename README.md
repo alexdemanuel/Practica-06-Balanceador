@@ -83,11 +83,11 @@ a2enmod lbmethod_byrequests deflate
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 
     <Proxy balancer://mycluster>
-        # Server 1
-        BalancerMember http://192.168.33.11 <!-- Ip del servidor web 1-->
+        # Server 1 - Ip del servidor web 1
+        BalancerMember http://192.168.33.11 
 
-        # Server 2
-        BalancerMember http://192.168.33.12 <!-- Ip del servidor web 2-->
+        # Server 2 - Ip del servidor web 2
+        BalancerMember http://192.168.33.12
     </Proxy>
 
     ProxyPass / balancer://mycluster/
